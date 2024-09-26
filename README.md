@@ -1,4 +1,4 @@
-Still a WIP!!
+<h1>Pomodoro App Overview</h1>
 
 My application aims to aid students and professionals with time management goals. Users can create their own goals using the "Manage Tasks" button, and can even choose their own study time using the customizable timer.
 
@@ -7,10 +7,9 @@ Unlike many productivity tools on the market, this app offers a simple, visually
 ![Screenshot (22)](https://github.com/user-attachments/assets/98a36bf4-f7e7-46df-a5ff-2ceab96024d1)
 
 
-To add: break button, logo, 
-        customizable tasks list!:
-        Add Task: A user should be able to input a task description and add it to the list.
-        Task Timer: Associate each task with a Pomodoro cycle (or several), allowing users to track time spent on individual tasks.
-        Task Status: Mark tasks as "completed" once done.
-        Task Deletion: Allow users to remove tasks from the list if needed.
-        Persistence: Optionally, store tasks locally using localStorage so they persist between sessions. (login function)
+<h2>Coming Soon: customizable tasks list </h2> 
+        <p>Add Task: A user should be able to input a task description and add it to the list.</p>
+        <p>Task Timer: Associate each task with a Pomodoro cycle, allowing users to track time spent on individual tasks.</p>
+        <p>Task Status: Mark tasks as "completed" once done.</p>
+        <p>Task Deletion: Allow users to remove tasks from the list if needed.</p>
+        <p>Persistence: Optionally, store tasks locally using localStorage so they persist between sessions. (login function)</p>
