@@ -4,7 +4,7 @@ My application aims to aid students and professionals with time management goals
 
 Unlike many productivity tools on the market, this app offers a simple, visually appealing design, making it easier to stay engaged without distractions. By addressing the need for an intuitive and customizable Pomodoro timer, this app helps users stay on track and enhances their ability to concentrate on important tasks.
 
-https://private-user-images.githubusercontent.com/139918551/369218754-4a521e85-91ea-4d1c-a205-8c99dc6ffa14.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjczNzE2MTQsIm5iZiI6MTcyNzM3MTMxNCwicGF0aCI6Ii8xMzk5MTg1NTEvMzY5MjE4NzU0LTRhNTIxZTg1LTkxZWEtNGQxYy1hMjA1LThjOTlkYzZmZmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwOTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDkyNlQxNzIxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ZGEyNzU4NjY1OTNjNTM3NWJjMzAxNTRkOTljNGQzMjJkNThmNTdiM2IyOGFkY2Y0ODJkZjNiZjc1Yzk3NmVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YfD84dFnemM_coLsfR5zIQkXdg67hMfLdlDl0Tc3N-g
+![369218754-4a521e85-91ea-4d1c-a205-8c99dc6ffa14](https://github.com/user-attachments/assets/09f23dbe-75eb-4776-9642-444f0a92d2ea)
 
 
 To add: break button, logo, tasks list
