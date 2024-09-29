@@ -74,3 +74,42 @@ function startTimer() {
   resetEl.addEventListener("click", resetTimer);
   
   setTimeEl.addEventListener("click", setCustomTime);
+
+//now for to do list code below
+const addTaskBtn = document.getElementById('add-task');
+const newTaskInput = document.getElementById('new-task');
+const todoList = document.getElementById('todo-list');
+
+addTaskBtn.addEventListener('click', function() {
+    const taskText = newTaskInput.value.trim();
+    if (taskText !== '') {
+        const listItem = createTaskItem(taskText);
+        todoList.appendChild(listItem);
+        newTaskInput.value = ''; // Clear input
+    }
+});
+
+function createTaskItem(taskText) {
+    const listItem = document.createElement('li');
+    const taskSpan = document.createElement('span');
+    taskSpan.textContent = taskText;
+    
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            taskSpan.classList.add('completed');
+            todoList.appendChild(listItem); // Move to bottom when checked
+        } else {
+            taskSpan.classList.remove('completed');
+        }
+    });
+    
+    listItem.appendChild(taskSpan);
+    listItem.appendChild(checkbox);
+    
+    return listItem;
+    
+  
+}
+  

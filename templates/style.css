@@ -1,23 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 
-.container {
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: center;
-    padding: 10px; 
+body {
+    background-color: rgb(255, 255, 255);
     font-family: 'Nunito', sans-serif; 
-    position: relative; 
-    height: 100vh; 
+}
+
+#webpage-title {
+    font-size: 50px; /* Larger font size for the webpage title */
+    text-align: center;
+    color: #b0b0b0; /* Same color as the other titles */
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1050px; /* Set the total width for both the timer and to-do list */
+}
+
+.timer-wrapper {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
 }
 
 .title {
-    font-size: 50px;
+    font-size: 25px; /* Adjusted size for title */
     margin-bottom: 0px;
     color: #b0b0b0;
     font-weight: 300; 
+    text-align: center;
 
 }
 
@@ -26,20 +51,22 @@
     color: #ffffff;
     margin-top: 10px;
     font-weight: 700; 
-
-    border: 2px solid #ffffff; /*for borderrrrr cute vvvv all below for the timer border fix make colors better*/
+    border: 2px solid #ffffff;
     border-radius: 8px; 
     padding: 10px 20px; 
     background-color: rgba(122, 122, 122, 0.3);
     box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5); 
     display: inline-block; 
+}
 
+.button-wrapper {
+    margin: 10px 0; /* Add margin for button spacing */
 }
 
 button {
     font-size: 18px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 5px; /* Adjusted for smaller button spacing */
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
@@ -63,14 +90,9 @@ button:hover {
 #reset {
     background-color: #B3E0F2;
 }
-#break{
-    background-color: #A8D1d1
-}
 
-body {
-    background-color: rgb(255, 255, 255);
-    font-family: 'Nunito', sans-serif; 
-
+#break {
+    background-color: #A8D1d1;
 }
 
 .custom-timer-wrapper {
@@ -88,7 +110,6 @@ input {
     text-align: center;
     border: 2px solid #B3E6B1; 
     font-family: 'Nunito', sans-serif; 
-
     border-radius: 10px;
 }
 
@@ -103,4 +124,81 @@ input {
     cursor: pointer;
     text-transform: uppercase;
     transition: opacity 0.3s ease-in-out;
+}
+
+.todo-wrapper {
+    width: 200px; /* To-do list width */
+    margin-left: 0;
+    background-color: #ffffff; /* Background color for the wrapper */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+#todo-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add padding around each item */
+    border-bottom: 1px solid #ccc; /* Thin gray line */
+    
+     
+}
+
+.checkbox {
+    margin-right: 10px; /* Space between checkbox and task text */
+}
+
+#todo-list li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #B3E6B1; 
+    border-radius: 5px;
+    color: rgba(71, 71, 71, 0.3);
+    max-width: 180px;
+
+}
+
+#add-task {
+    font-family: 'Nunito', sans-serif;
+    background-color: #B3E6B1; 
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid #B3E6B1; 
+    border-radius: 8px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#to-do-title {
+    color: #b0b0b0;
+    font-weight: 300; 
+    align-items: center;
+
+}
+
+#text{
+    background-color: rgba(122, 122, 122, 0.3);
+
 }

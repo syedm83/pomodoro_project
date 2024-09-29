@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="webpage-title">Pomodoro Timer</h1>
+
     <div class="container">
-        <h1 class="title">Pomodoro Timer</h1>
-        <p class="timer" id="timer">25:00</p>
+        <div class="content-wrapper">
+            <div class="timer-wrapper">
+                <p class="timer" id="timer">25:00</p>
 
+                <div class="button-wrapper">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="break">Break</button>
+                </div>
 
-        <div class="button-wrapper">
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
-            <button id="break">Break</button>
+                <div class="input-wrapper">
+                    <input type="text" id="minutes" placeholder=" " />
+                    <button id="set-time">Set Timer</button>
+                </div>
 
-        </div>
-
-        <div class="input-wrapper">
-            <input type="text" id="minutes" placeholder=" " />
-            <button id="set-time">Set Timer</button>
+                <div>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
             
+            <!-- To-Do List -->
+            <div class="todo-wrapper">
+                <h2 class="title">To-Do List</h2>
+                <ul id="todo-list"></ul>
+                <input type="text" id="new-task" placeholder="   ">
+                <button id="add-task">Add Task</button>
+            </div>
         </div>
-
-        <div>
-            <button id="reset">Reset</button>
-        </div>
+        
     </div>
     <script src="index.js"></script>
 </body>
