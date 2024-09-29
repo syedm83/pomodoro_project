@@ -14,5 +14,3 @@ Unlike many productivity tools on the market, this app offers a simple, visually
         <p>Add Task: A user should be able to input a task description and add it to the list.</p>
         <p>Task Timer: Associate each task with a Pomodoro cycle, allowing users to track time spent on individual tasks.</p>
         <p>Task Status: Mark tasks as "completed" once done.</p>
-        <p>Task Deletion: Allow users to remove tasks from the list if needed.</p>
-        <p>Persistence: Optionally, store tasks locally using localStorage so they persist between sessions. (login function)</p>
