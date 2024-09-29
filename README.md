@@ -7,10 +7,10 @@ My application aims to aid students and professionals with time management goals
 
 Unlike many productivity tools on the market, this app offers a simple, visually appealing design, making it easier to stay engaged without distractions. By addressing the need for an intuitive and customizable Pomodoro timer, this app helps users stay on track and enhances their ability to concentrate on important tasks.
 
-![Screenshot (22)](https://github.com/user-attachments/assets/98a36bf4-f7e7-46df-a5ff-2ceab96024d1)
+![Screenshot (50)](https://github.com/user-attachments/assets/63e16380-bd2f-4d7e-bdb4-9e0563d674a9)
 
 
-<h2>Coming Soon: customizable tasks list </h2> 
+<h2>Added 9/29: customizable tasks list </h2> 
         <p>Add Task: A user should be able to input a task description and add it to the list.</p>
         <p>Task Timer: Associate each task with a Pomodoro cycle, allowing users to track time spent on individual tasks.</p>
         <p>Task Status: Mark tasks as "completed" once done.</p>
