@@ -5,6 +5,8 @@
 
 My application aims to aid students and professionals with time management goals. Users can create their own goals using the "Manage Tasks" button, and can even choose their own study time using the customizable timer.
 
+Try it for yourself! https://syedm83.github.io/pomodoro_project/templates/
+
 Unlike many productivity tools on the market, this app offers a simple, visually appealing design, making it easier to stay engaged without distractions. By addressing the need for an intuitive and customizable Pomodoro timer, this app helps users stay on track and enhances their ability to concentrate on important tasks.
 
 ![Screenshot (50)](https://github.com/user-attachments/assets/63e16380-bd2f-4d7e-bdb4-9e0563d674a9)
