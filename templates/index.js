@@ -56,8 +56,8 @@ function startTimer() {
     } else {
       clearInterval(interval);
       isTimerRunning = false;
-      alert("Time's up!"); // Popup alert
-      timeLeft = 1500; // Reset to default
+      alert("Time's up!"); 
+      timeLeft = 1500; 
       updateTimer();
     }
   }, 1000);
