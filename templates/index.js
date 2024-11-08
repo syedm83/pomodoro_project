@@ -14,7 +14,7 @@ let timeLeft = 1500;
 let isTimerRunning = false;
 
 function startTimer() {
-  if (isTimerRunning) return; // Prevent multiple timers
+  if (isTimerRunning) return; 
 
   interval = setInterval(() => {
     if (timeLeft > 0) {
@@ -24,7 +24,7 @@ function startTimer() {
       clearInterval(interval);
       isTimerRunning = false;
       alert("Time's up!");
-      timeLeft = 1500; // Reset to default 25 minutes
+      timeLeft = 1500; 
       updateTimer();
     }
   }, 1000);
@@ -35,19 +35,17 @@ function startTimer() {
 
 
 function updateTimer() {
-  let hours = Math.floor(timeLeft / 3600); // Calculate hours
-  let minutes = Math.floor((timeLeft % 3600) / 60); // Calculate minutes
-  let seconds = timeLeft % 60; // Calculate seconds
+  let hours = Math.floor(timeLeft / 3600); 
+  let minutes = Math.floor((timeLeft % 3600) / 60); 
+  let seconds = timeLeft % 60; 
 
-  // Format the time with leading zeroes if needed
   let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
-  // Display the formatted time
   timerEl.innerHTML = formattedTime;
 }
 
 function startTimer() {
-  if (isTimerRunning) return; // Prevent multiple timers
+  if (isTimerRunning) return; 
 
   interval = setInterval(() => {
     if (timeLeft > 0) {
@@ -78,23 +76,19 @@ function startTimer() {
   }
   
   function setCustomTime() {
-    const timeInput = minutesInput.value; // Still using the "minutes" input field
-  const timeParts = timeInput.split(':').map(Number); // Split the input by ':' and convert to numbers
+    const timeInput = minutesInput.value; 
+  const timeParts = timeInput.split(':').map(Number); 
 
   let hours = 0, minutes = 0, seconds = 0;
 
   if (timeParts.length === 3) {
-    // Format: hours:minutes:seconds
     [hours, minutes, seconds] = timeParts;
   } else if (timeParts.length === 2) {
-    // Format: minutes:seconds
     [minutes, seconds] = timeParts;
   } else if (timeParts.length === 1) {
-    // Format: seconds
     [seconds] = timeParts;
   }
 
-  // Calculate total time in seconds
   const totalTimeInSeconds = (hours * 3600) + (minutes * 60) + seconds;
 
   if (!isNaN(totalTimeInSeconds) && totalTimeInSeconds >= 0) {
@@ -108,7 +102,6 @@ function startTimer() {
   
   
   minutesInput.addEventListener("input", (e) => {
-    // Only allow digits and colons
     e.target.value = e.target.value.replace(/[^0-9:]/g, '');
   });
   
@@ -118,7 +111,6 @@ function startTimer() {
   
   setTimeEl.addEventListener("click", setCustomTime);
 
-//now for to do list code below
 const addTaskBtn = document.getElementById('add-task');
 const newTaskInput = document.getElementById('new-task');
 const todoList = document.getElementById('todo-list');
@@ -155,4 +147,4 @@ function createTaskItem(taskText) {
     
   
 }
-  
+

@@ -2,44 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="webpage-title">Pomodoro Timer</h1>
-
     <div class="container">
-        <div class="content-wrapper">
-            <div class="timer-wrapper">
-                <p class="timer" id="timer">25:00</p>
-
-                <div class="button-wrapper">
-                    <button id="start">Start</button>
-                    <button id="stop">Stop</button>
-                    <button id="break">Break</button>
-                </div>
-
-                <div class="input-wrapper">
-                    <input type="text" id="minutes" placeholder=" " />
-                    <button id="set-time">Set Timer</button>
-                </div>
-
-                <div>
-                    <button id="reset">Reset</button>
-                </div>
-            </div>
+        <h1 id="webpage-title">Pomodoro Timer</h1>
+        
+        <div class="timer-container">
+            <p id="timer">25:00</p>
             
-            <!-- To-Do List -->
-            <div class="todo-wrapper">
-                <h2 class="title">To-Do List</h2>
-                <ul id="todo-list"></ul>
-                <input type="text" id="new-task" placeholder="   ">
-                <button id="add-task">Add Task</button>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div class="custom-time">
+                <input type="text" id="minutes" placeholder="HH:MM:SS">
+                <button id="set-time">Set Timer</button>
             </div>
         </div>
-        
+
+        <div class="todo-container">
+            <h2>To-Do List</h2>
+            <ul id="todo-list"></ul>
+            <input type="text" id="new-task" placeholder="New Task">
+            <button id="add-task">Add Task</button>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
