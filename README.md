@@ -9,7 +9,7 @@ Try it for yourself! https://syedm83.github.io/pomodoro_project/templates/
 
 Unlike many productivity tools on the market, this app offers a simple, visually appealing design, making it easier to stay engaged without distractions. By addressing the need for an intuitive and customizable Pomodoro timer, this app helps users stay on track and enhances their ability to concentrate on important tasks.
 
-![Screenshot (50)](https://github.com/user-attachments/assets/63e16380-bd2f-4d7e-bdb4-9e0563d674a9)
+![Screenshot (113)](https://github.com/user-attachments/assets/d2a039d8-cb6e-4ccd-a6ec-2b776af03c06)
 
 
 <h2>Added 9/29: customizable tasks list </h2> 
