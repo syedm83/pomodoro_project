@@ -9,6 +9,7 @@ const minutesInput = document.getElementById("minutes");
 
 
 
+
 let interval;
 let timeLeft = 1500;
 let isTimerRunning = false;
@@ -104,6 +105,33 @@ function startTimer() {
   minutesInput.addEventListener("input", (e) => {
     e.target.value = e.target.value.replace(/[^0-9:]/g, '');
   });
+
+  function addBounceEffect(button) {
+    button.classList.add("bounce");
+    button.addEventListener("animationend", () => {
+      button.classList.remove("bounce");
+    }, { once: true });
+  }
+  
+  startEl.addEventListener("click", () => {
+    addBounceEffect(startEl);
+    startTimer();
+  });
+  
+  stopEl.addEventListener("click", () => {
+    addBounceEffect(stopEl);
+    stopTimer();
+  });
+  
+  resetEl.addEventListener("click", () => {
+    addBounceEffect(resetEl);
+    resetTimer();
+  });
+  
+  setTimeEl.addEventListener("click", () => {
+    addBounceEffect(setTimeEl);
+    setCustomTime();
+  });
   
   startEl.addEventListener("click", startTimer);
   stopEl.addEventListener("click", stopTimer);
@@ -120,7 +148,7 @@ addTaskBtn.addEventListener('click', function() {
     if (taskText !== '') {
         const listItem = createTaskItem(taskText);
         todoList.appendChild(listItem);
-        newTaskInput.value = ''; // Clear input
+        newTaskInput.value = ''; 
     }
 });
 
@@ -134,7 +162,7 @@ function createTaskItem(taskText) {
     checkbox.addEventListener('change', function() {
         if (this.checked) {
             taskSpan.classList.add('completed');
-            todoList.appendChild(listItem); // Move to bottom when checked
+            todoList.appendChild(listItem);  
         } else {
             taskSpan.classList.remove('completed');
         }
