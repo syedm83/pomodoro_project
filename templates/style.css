@@ -68,6 +68,7 @@ button {
 
 button.bounce {
     animation: bounce 0.2s ease-in-out;
+    
   }
 
 #start { background-color: #2C9ADE; }
